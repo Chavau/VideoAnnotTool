@@ -61,7 +61,7 @@ public class DialogDraw {
                     String duration = duree.getText().toString();
                     if (title!=null && !title.isEmpty() && duration!=null && !duration.isEmpty()){
                         //drawAnnot.setAnnotationTitle(title);
-                        //drawAnnot.setAnnotationDuration(Integer.parseInt(duration));
+                        //drawAnnot.setAnnotationDuration(Integer.parseInt(duration)*1000);
 
                         dialogListener.onSaveDrawImage(title, Integer.parseInt(duration));
                     }
